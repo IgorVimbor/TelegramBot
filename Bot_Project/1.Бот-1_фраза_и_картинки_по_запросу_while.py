@@ -2,7 +2,7 @@
 # Отвечает на запросы типовой фразой и показывает по запросу картинки собачек, котиков и лисичек
 
 import requests
-import Bot_tokens
+import tokens_bots
 
 # функция проверки статуса ответа сервера
 def get_result(response, link):
@@ -20,10 +20,10 @@ API_CATS_URL: str = 'https://api.thecatapi.com/v1/images/search'
 API_DOGS_URL: str = 'https://random.dog/woof.json'
 API_FOX_URL: str = 'https://randomfox.ca/floof/'
 
-BOT_TOKEN: str = Bot_tokens.token_bot1    # токен бота, полученный у @BotFather
-# Типовая ответ бота на любой запрос не связанный с котами, собаками и лисами
+BOT_TOKEN: str = tokens_bots.token_bot1    # токен бота, полученный у @BotFather
+# Типовой ответ бота на любой запрос не связанный с котами, собаками и лисами
 TEXT = 'Не понял чего ты хочешь, но я могу показывать фотки котиков, собачек или лисичек :))'
-# Типовая ответ бота на ошибку сервисов скартинками
+# Типовой ответ бота на ошибку сервисов с картинками
 ERROR_TEXT: str = 'Здесь должна была быть картинка :('
 
 offset: int = -2
