@@ -16,7 +16,7 @@ API_CATS_URL: str = 'https://api.thecatapi.com/v1/images/search'
 API_DOGS_URL: str = 'https://random.dog/woof.json'
 API_FOX_URL: str = 'https://randomfox.ca/floof/'
 
-API_TOKEN: str = bot_tokens.token_bot2     # токен Бот-2
+API_TOKEN: str = bot_tokens.token_bot2        # токен бота (вставляем свой)
 
 animals = ['кот', 'соба', 'пес', 'пёс', 'лис']    # список слов для фильтра
 
